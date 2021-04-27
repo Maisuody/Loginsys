@@ -9,7 +9,7 @@ const app = express();
 app.set('view-engine', 'ejs');
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use(express.json());
+
 
 const course = [{name: "artifficial intellegence", code: "CSE321" ,id:1, Desc: "this is very useful"},{name: "control", code: "CSE421" ,id:2, Desc: "useful"}];
 const student = [{name: "maisuody", code: 1601501, id:1}];
