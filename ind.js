@@ -131,6 +131,12 @@ app.delete('/api/courses/', function(req, res){
 
 
 
-const port = process.env.PORT || 8000
-app.listen(port, ()=> console.log(`WHOOOOOO!!${port}`));
+const host = '0.0.0.0';
+const port = process.env.PORT || 8000;
+app.listen(port, host, function() {
+    console.log("Server started.......");
+  });
+
+//const port = process.env.PORT || 8000
+//app.listen(port, ()=> console.log(`WHOOOOOO!!${port}`));
 //app.listen(8000, ()=> console.log('almostDone'));
