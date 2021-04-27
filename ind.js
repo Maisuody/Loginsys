@@ -3,15 +3,17 @@ const express = require('express');
 const Joi = require('joi');
 const bodyParser = require('body-parser');
 
+
+
+
+
+const app = express();
+
 const host = '0.0.0.0';
 const port = process.env.PORT || 8000;
 app.listen(port, host, function() {
     console.log("Server started.......");
   });
-
-
-
-const app = express();
 
 app.set('view-engine', 'ejs');
 app.use(express.json());
