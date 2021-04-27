@@ -3,6 +3,13 @@ const express = require('express');
 const Joi = require('joi');
 const bodyParser = require('body-parser');
 
+const host = '0.0.0.0';
+const port = process.env.PORT || 8000;
+app.listen(port, host, function() {
+    console.log("Server started.......");
+  });
+
+
 
 const app = express();
 
@@ -130,12 +137,6 @@ app.delete('/api/courses/', function(req, res){
 });
 
 
-
-const host = '0.0.0.0';
-const port = process.env.PORT || 8000;
-app.listen(port, host, function() {
-    console.log("Server started.......");
-  });
 
 //const port = process.env.PORT || 8000
 //app.listen(port, ()=> console.log(`WHOOOOOO!!${port}`));
